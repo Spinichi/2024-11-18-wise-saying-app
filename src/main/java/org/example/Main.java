@@ -1,22 +1,38 @@
 package org.example;
 
-import java.util.Scanner;
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        boolean isRunning = true;
+//        Scanner scanner = new Scanner(System.in);
+//
+//        while (isRunning) {
+//            System.out.println("== 명언 앱 ==");
+//            System.out.print("명령) ");
+//            String command = scanner.nextLine();
+//
+//            if (command.equals("종료")) {
+//                isRunning = false;
+//            }
+//        }
+//
+//        scanner.close();
+//    }
+//}
 
 public class Main {
     public static void main(String[] args) {
-        boolean isRunning = true;
-        Scanner scanner = new Scanner(System.in);
+        App app = new App();
+        app.run();
+    }
+}
 
-        while (isRunning) {
-            System.out.println("== 명언 앱 ==");
-            System.out.print("명령) ");
-            String command = scanner.nextLine();
+class App {
 
-            if (command.equals("종료")) {
-                isRunning = false;
-            }
-        }
+    public void run() {
+        System.out.println("== 명언 앱 ==");
 
-        scanner.close();
+        System.out.print("명령) ");
     }
 }
