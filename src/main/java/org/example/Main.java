@@ -10,13 +10,11 @@ public class Main {
 }
 
 class App {
-
     public void run() {
         System.out.println("== 명언 앱 ==");
 
-
         Scanner scanner = new Scanner(System.in);
-
+        int lastId = 0;
 
         while (true) {
             System.out.print("명령) ");
@@ -30,6 +28,8 @@ class App {
 
                 System.out.print("작가 : ");
                 String author = scanner.nextLine();
+                int id = ++lastId;
+                System.out.println("%d번 명언이 등록되었습니다".formatted(id));
 
             }
         }
