@@ -29,11 +29,26 @@ class App {
                 System.out.print("작가 : ");
                 String author = scanner.nextLine();
                 int id = ++lastId;
+
+                WiseSaying wiseSaying = new WiseSaying(id,content,author);
+
                 System.out.println("%d번 명언이 등록되었습니다".formatted(id));
 
             }
         }
 
         scanner.close();
+    }
+}
+
+class WiseSaying {
+    int id;
+    String content;
+    String author;
+
+    WiseSaying(int id, String content, String author) {
+        this.id = id;
+        this.content = content;
+        this.author = author;
     }
 }
