@@ -1,12 +1,17 @@
 [
   {
     "id": 2,
-    "content": "수정한 명언",
-    "author": "수정한 작가"
+    "content": "11",
+    "author": "22(수정본)"
   },
   {
     "id": 3,
-    "content": "555",
-    "author": "666"
+    "content": "66(수정본)",
+    "author": "55(수정본)"
+  },
+  {
+    "id": 5,
+    "content": "1010",
+    "author": "2020"
   }
 ]
